@@ -86,9 +86,12 @@ body {
   font-weight: 700;
   letter-spacing: 17.4px;
 
-  animation: moveInRight;
+  /* animation: moveInRight;
   animation-duration: 2s;
-  animation-timing-function: ease-out;
+  animation-timing-function: ease-out; */
+
+  /* Short Hand */
+  animation: moveInRight 2s ease-out;
  
 }
 
@@ -145,6 +148,22 @@ ANIMATION
 }
 
 
+@keyframes moveInBottom {
+  
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+    
+  }
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+}
 
 .btn:link,
 .btn:visited {
@@ -201,5 +220,7 @@ ANIMATION
 
 .btn-animated {
   animation: moveInBottom .5s ease-out;
+  animation-delay: .75s;
+  animation-fill-mode: backwards;
 
 }
