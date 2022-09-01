@@ -1,0 +1,22 @@
+{
+  "name": "naturos",
+  "version": "1.0.0",
+  "description": "landpage for Naturos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mariano1994/Naturos.git"
+  },
+  "author": "Mariano Capiliku",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mariano1994/Naturos/issues"
+  },
+  "homepage": "https://github.com/Mariano1994/Naturos#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
