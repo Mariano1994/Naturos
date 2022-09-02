@@ -40,28 +40,24 @@ body {
   text-transform: uppercase;
   margin-bottom: 6rem;
   animation: moveInRight .5 ease-in; }
-
-.heading-primary--main,
-.heading-primary--sub {
-  display: block; }
-
-.heading-primary--main {
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation: moveInLeft;
-  animation-duration: 2s;
-  animation-timing-function: ease-out; }
-
-.heading-primary--sub {
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-  /* animation: moveInRight;
+  .heading-primary--main, .heading-primary--sub {
+    display: block; }
+  .heading-primary--main {
+    font-size: 6rem;
+    font-weight: 400;
+    letter-spacing: 3.5rem;
+    animation: moveInLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out; }
+  .heading-primary--sub {
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.75rem;
+    /* animation: moveInRight;
   animation-duration: 2s;
   animation-timing-function: ease-out; */
-  /* Short Hand */
-  animation: moveInRight 2s ease-out; }
+    /* Short Hand */
+    animation: moveInRight 2s ease-out; }
 
 /* 
 =======================================
@@ -97,8 +93,7 @@ ANIMATION
     opacity: 1;
     transform: translateY(0); } }
 
-.btn:link,
-.btn:visited {
+.btn:link, .btn:visited {
   font-size: 1.6rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -111,14 +106,13 @@ ANIMATION
 .btn:hover {
   transform: translateY(-3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .btn:hover::after {
+    transform: scaleX(1.2) scaleY(1.4);
+    opacity: 0; }
 
 .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
-
-.btn--white {
-  background-color: #fff;
-  color: #777; }
 
 .btn::after {
   content: "";
@@ -132,12 +126,11 @@ ANIMATION
   z-index: -1;
   transition: all 0.4s; }
 
-.btn--white::after {
-  background-color: #fff; }
-
-.btn:hover::after {
-  transform: scaleX(1.2) scaleY(1.4);
-  opacity: 0; }
+.btn--white {
+  background-color: #fff;
+  color: #777; }
+  .btn--white::after {
+    background-color: #fff; }
 
 .btn--animated {
   animation: moveInBottom .5s ease-out;
