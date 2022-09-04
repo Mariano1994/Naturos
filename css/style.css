@@ -42,6 +42,13 @@ ANIMATION
 html {
   font-size: 62.5%; }
 
+body {
+  font-family: 'lato',sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem; }
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -66,12 +73,14 @@ html {
     /* Short Hand */
     animation: moveInRight 2s ease-out; }
 
-body {
-  font-family: 'lato',sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem; }
+.heading-secondary {
+  display: inline-block;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7ed56f, #27b485);
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .btn:link, .btn:visited {
   font-size: 1.6rem;
@@ -164,3 +173,8 @@ body {
     width: calc( 2 * ((100% - 3 * 6rem) / 4) + 6rem); }
   .row .col-3-of-4 {
     width: calc( 3 * ((100% - 3 * 6rem) / 4) + (2* 6rem)); }
+
+.section-about {
+  background-color: #f7f7f7;
+  padding: 25rem 0;
+  margin-top: -20vh; }
