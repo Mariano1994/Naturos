@@ -4,7 +4,7 @@
 
   max-width: $grid-width;
   margin: 0 auto;
-  background: #eee;
+  // background: #eee;
   
   @include clearfix;
 
@@ -14,7 +14,7 @@
   }
 
   [class^="col-"] {
-    background-color: orangered;
+    // background-color: orangered;
     float: left;
 
      &:not(:last-child) {
