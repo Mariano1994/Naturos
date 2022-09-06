@@ -53,6 +53,15 @@
     }
   }
 
+  &--green {
+    background-color: $color-primary;
+    color: $color-white;
+  
+      &::after {
+      background-color: $color-primary;
+      }
+    }
+
 
   &--animated {
   animation: moveInBottom .5s ease-out;
@@ -83,6 +92,7 @@
     box-shadow: 0 1rem 2rem rgba($color-black, .15);
     border-bottom: none;
     transform: translateY(-2px);
+    border-radius: 1px;
 
   }
 
